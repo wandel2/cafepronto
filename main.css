@@ -1,0 +1,216 @@
+/* 
+
+Group 4 Final Project
+Author: Erin Bowen and Will Andel
+Date: 7/25/2021
+	
+Filename: main.css
+Supporting Files:
+	
+-----------------------------------------------------------------------------*/
+
+
+
+/* display HTML5 structural elements as blocks
+-----------------------------------------------------------------------------*/
+
+article, aside, figure, figcaption, footer, hgroup, header, section, nav {
+	display: block; 
+}
+
+
+
+/* reset styles
+-----------------------------------------------------------------------------*/
+
+html {
+    font-size: 20px;
+}
+
+a, article, body, col, colgroup, div, fieldset, footer, form, header, h1, h2, input, label, legend, li, nav, p, table, tbody, td, thead, th, tr, ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* default page elements
+-----------------------------------------------------------------------------*/
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/2214681.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+ 
+  font-family: Verdana, Calibri, sans-serif;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+	border-left: 3px solid black;
+    border-right: 3px solid black;
+	border-bottom: 3px solid black;
+    position: relative;
+    background-color: rgb(0, 102, 102);
+	
+    font-family: Verdana, Calibri, sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  padding-left: 15px;
+}
+
+h2 {
+	color: rgb(0, 102, 102);
+}
+
+ul {
+	list-style-type: circle;
+	margin-left: 50px;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul li strong {
+	color: rgb(189, 180, 87);
+}
+
+
+/* main content
+-----------------------------------------------------------------------------*/
+
+.maincontent {
+	background-color: white;
+}
+
+article {
+	background-color: white;
+	border: 3px solid black;
+}
+
+
+
+/* skip navigation link
+-----------------------------------------------------------------------------*/
+
+p.skipnavigation {
+    margin: 0;
+}
+
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+
+p.skipnavigation a:focus {
+    color: #000;
+    background-color: snow;
+    top: 2%;
+    left: auto;
+    right: 2%;
+    z-index: 2;
+}
+
+
+
+/* site navigation
+-----------------------------------------------------------------------------*/
+
+nav.sitenavigation {
+    width: 100%;
+    text-align: center;
+}
+
+nav.sitenavigation li {
+    display: inline-block;
+    margin: 0.4em 0.6em;
+    font-size: 1.1em;
+    padding: 5px 50px;
+    background-color: white;
+    border: 2px solid #fea837;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+}
+
+nav.sitenavigation a:link {
+    color: black;
+    text-decoration: none;
+}
+
+nav.sitenavigation a:visited {
+    color: rgb(189, 180, 87);
+}
+
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: rgb(189, 180, 87);
+    text-shadow: 1px -1px 0 #84495F;
+}
+
+
+
+/* main content
+-----------------------------------------------------------------------------*/
+
+.maincontent{
+    background-color: white
+}
+
+article {
+    background-color: white;
+    margin: 10px 15px 15px;
+    padding: 5%;
+    border-bottom: 3px solid black;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article p {
+    padding-top: 10px;
+}
+
+
+
+/* footer
+-----------------------------------------------------------------------------*/
+
+footer {
+  padding: 1% 1% 1% 5%;
+  background-color: white;
+  margin: 10px 15px 15px;
+  text-align: center;
+  border: 3px solid black;
+} 
+
+
+
+/* print
+-----------------------------------------------------------------------------*/
+
+@media print {
+	article {
+	  float: none;
+	  width: 100%;	
+   }
+   article, aside, body, .container, footer, header {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+		display: none;
+	}
+}
+
+@page {
+   margin: 0.75in;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+	<head>
+	
+		<title>Cafe Pronto</title>
+	
+	<!--
+	
+		Final Project
+		Author: Erin Bowen and Will Andel
+		Date: 7/25/2021
+		
+		Filename: template.htm
+		Supporting Files: mainbanner.jpg, main.css
+		
+	-->
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="cafepronto.ico">
+	
+	</head>
+	
+	
+	
+	<body>
+		<div class="container">
+			<p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+	
+		<header>
+			<img src="mainbanner.jpg" alt="Cafe Pronto" />
+		</header>
+		
+		<nav class="sitenavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contactus.htm">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<article id="contentstart">
+            <h2>Your form has been submitted</h2>
+               <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+		
+		<footer>
+			<address>
+				Cafe Pronto &#183;
+				221B Baker Street &#183;
+				London, UK &#183;
+				(000)867-5309
+			</address>
+		</footer>
+		</div>
+		
+	</body>
+		
+
+
+</html>

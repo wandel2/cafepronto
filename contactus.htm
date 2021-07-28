@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+	<head>
+	
+		<title>Cafe Pronto</title>
+	
+	<!--
+	
+		Final Project
+		Author: Erin Bowen and Will Andel
+		Date: 7/25/2021
+		
+		Filename: contactus.htm
+		Supporting Files: mainbanner.jpg, main.css
+		
+	-->
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<link href="custyles.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="cafepronto.ico">
+	
+	</head>
+	
+	
+	
+	<body>
+	
+		<div class="container">
+			<p class="skipnavigation">
+				<a href="#contentstart">Skip Navigation</a>
+			</p>
+	
+			<header>
+				<img src="mainbanner.jpg" alt="Cafe Pronto" />
+			</header>
+		
+			<nav class="sitenavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contactus.htm">Contact Us</a></li>
+			</ul>
+			</nav>
+		</div> 
+		
+		<article class="maincontent">
+		
+			<form action="results.html">
+				<fieldset class="contactinfo">
+					<legend>Drop Us A Line</legend>
+					<label for="fnameinput">
+						First Name 
+						<input type="text" id="fnameinput" name="fname" placeholder="First Name" required="required">
+					</label>
+					<label for="lnameinput">
+						Last Name 
+						<input type="text" id="lnameinput" name="lname" placeholder="Last Name" required="required">
+					</label>
+					<label for="emailinput">
+						Email
+						<input type="text" id="emailinput" name="email" placeholder="address@example.com" required="required">
+					</label>
+					<label for="phoneinput">
+						Phone 
+						<input type="text" id="phoneinput" name="phone" placeholder="000-000-0000" required="required">
+					</label>
+					<label for="feedback">
+						Comments?
+						<textarea id="feedback" name="feedback" required="required"></textarea>
+					</label>
+					
+					<input type="checkbox" name="newsletter" id="newsletter">
+					<label for="newsletter">
+						Sign me up for Cafe Pronto updates and information about upcoming performances!
+					</label>
+					
+				</fieldset>
+				
+				<fieldset class="submitbutton">
+					<input type="submit" id="submit" value="Send">
+				</fieldset>
+				
+				<fieldset class="resetbutton">
+					<input type="reset" id="reset" value="Reset">
+				</fieldset>
+				
+			</form>
+		</article> 
+		
+		<footer>
+			<address>
+				Cafe Pronto &#183;
+				221B Baker Street &#183;
+				London, UK &#183;
+				(000)867-5309
+			</address>
+		</footer>
+		
+	</body>
+
+
+
+</html>

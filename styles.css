@@ -1,0 +1,25 @@
+﻿table {
+	font-size: 14px;
+	border-collapse: collapse;
+	border: 3px solid black;
+	margin: 10px auto;
+	width: 450px;
+}
+
+thead{
+	background-color: rgb(189, 180, 87);
+}
+
+th, td {
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+}
+
+tr td:nth-of-type(2) {
+	text-align: right;
+}
+
+tr td:nth-of-type(3) {
+	text-align: right;
+}

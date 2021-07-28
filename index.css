@@ -1,0 +1,47 @@
+/* 
+
+Group 4 Final Project
+Author: Erin Bowen and Will Andel
+Date: 7/25/2021
+	
+Filename: 
+Supporting Files: 
+-----------------------------------------------------------------------------*/
+
+
+
+/* float main img to the right
+-----------------------------------------------------------------------------*/
+
+figure {
+    display: inline-block;
+    border: none;
+    margin: 70px 30px 30px 0px; /* adjust as needed */
+    text-align: center
+}
+
+figure img {
+    vertical-align: top;
+    text-align: center;
+}
+
+figure figcaption {
+    border: none;
+    text-align: center;
+    align-content: center
+}
+
+h3 {
+ text-align: center;
+ padding-bottom: 20px;
+}
+
+.musicbox {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.audiocontrol{
+    text-align: right;
+    float: right;
+}
